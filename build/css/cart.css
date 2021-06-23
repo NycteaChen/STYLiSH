@@ -1,0 +1,409 @@
+@import url("loading.css");
+
+main {
+  margin: 160px 20px 50px;
+  min-height: calc(100vh - 255px);
+  color: #424141;
+}
+.cartTitle,
+.purchaseCard,
+.purchaseColor,
+.purchaseSize,
+.purchaseCount {
+  display: flex;
+}
+
+/* 沒有購物 */
+.nothing {
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+/* 購物車  */
+.cartTitle {
+  font-weight: 900;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+
+/* 購買資訊 */
+.purchaseDetails {
+  margin-top: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+/* 資訊卡 */
+.purchaseCard {
+  margin-bottom: 20px;
+}
+.purchaseData {
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.purchaseData .variant {
+  border-right: 1px solid black;
+  padding-right: 8px;
+}
+
+.purchaseData .color,
+.purchaseData .size {
+  margin-left: 12px;
+}
+
+.purchaseData > .purchaseId,
+.purchaseData > .purchaseColor {
+  margin: 20px auto 10px;
+}
+
+/* 計價 */
+
+.purchaseCount > .count {
+  text-align: center;
+}
+
+.purchaseCount > .count + .count {
+  margin-left: auto;
+}
+
+.purchaseCount > .count > #quantity {
+  margin-bottom: 12px;
+}
+
+.purchaseCount > .count > #price,
+.purchaseCount > .count > #amount {
+  margin-bottom: 20px;
+}
+
+.quantity > #selectNumber {
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px grey;
+  border: 1px solid grey;
+  padding-left: 12px;
+  outline: none;
+  background-color: #eeeeee;
+}
+
+/* 移除 */
+.purchaseCount > .delete {
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/cart-remove.png");
+  cursor: pointer;
+}
+
+.purchaseCount > .delete:hover {
+  background-image: url("../images/cart-remove-hover.png");
+}
+
+/* 寄送與付款*/
+.personalForm {
+  margin-top: 25px;
+  display: none;
+}
+
+.getProduct {
+  background-color: #d8d8d8;
+  padding: 10px;
+}
+
+.getProduct select {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #838181;
+  margin: 10px auto 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* 提醒 */
+.remind {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+/* 訂購資料 */
+
+.orderData .title {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.formContent {
+  margin: 20px auto;
+}
+
+.formContent > .col {
+  margin-bottom: 20px;
+}
+
+.formContent > .col > label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*信用卡*/
+.creditCard + .formContent {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.cardPay{
+  display: none;
+}
+
+@keyframes cardShow { 
+  from{opacity:0 } 
+  to{opacity:1 }
+}
+
+
+.cardPay-in{
+  display: block;
+  animation: cardShow 1s;
+}
+
+
+.formContent input[type="text"],
+input[type="email"], .tpfield{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #838181;
+  padding-left: 12px;
+  outline: none;
+}
+
+
+.nameRemind {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ac783e;
+}
+
+.deliveryTime {
+  padding-bottom: 25px;
+}
+
+input[type="radio"]{
+  cursor: pointer;
+}
+
+.deliveryTime > .timeSelect > label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  
+}
+
+/* 總金額 */
+.totalCost {
+  width: 80%;
+  margin: 25px 0 40px auto;
+  white-space: nowrap;
+  
+}
+
+.totalPurchaseCost,
+.shipping,
+.shouldPay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.shipping {
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.totalCost .cost {
+  position: relative;
+  top: 15px;
+}
+
+.totalCost span {
+  font-size: 30px;
+}
+
+/* 確認付款*/
+#confirmToPay {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 360px) {
+  .purchaseCount {
+    margin-left: 60px;
+  }
+  .purchaseCount > .delete {
+    position: relative;
+    bottom: 120px;
+  }
+  .deliveryTime > .timeSelect {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .totalCost {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  main {
+    margin: 160px auto 50px;
+    width: 75%;
+  }
+  .submit {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 760px) {
+  main {
+    margin: 160px auto 50px;
+    width: 90%;
+  }
+
+  .purchaseDetails,
+  .getProduct,
+  .delivery,
+  .payment,
+  .col {
+    display: flex;
+  }
+
+  .cartTitle,
+  .purchaseDetails {
+    justify-content: space-between;
+    border-bottom: 0;
+  }
+
+  /* 計數項目 */
+  .cartTitle {
+    padding: 10px 40px;
+  }
+
+  /* 購買清單 */
+  .purchaseList {
+    border: 1px solid grey;
+    padding: 10px 40px;
+  }
+  .purchaseDetails {
+    width: 100%;
+  }
+  .purchaseCard{
+    width:30%;
+  }
+  .purchaseCount > .delete {
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+  }
+  .purchaseCount {
+    width: 50%;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-right: 50px;
+  }
+
+  #quantity,
+  #price,
+  #amount {
+    display: none;
+  }
+
+  .purchaseDetails:first-of-type > .purchaseCount > .quantity > #quantity,
+  .purchaseDetails:first-of-type > .purchaseCount > .price > #price,
+  .purchaseDetails:first-of-type > .purchaseCount > .amount > #amount {
+    display: block;
+    position: relative;
+    bottom: 110px;
+  }
+  .purchaseDetails:first-of-type > .purchaseCount {
+    padding-top: 40px;
+  }
+
+  .purchaseDetails:first-of-type > .purchaseCount > .delete {
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+
+  /* 寄送與付款 */
+  .getProduct {
+    height: 80px;
+  }
+  .delivery,
+  .payment {
+    margin: auto 10px;
+  }
+  .delivery div,
+  .payment div {
+    width: 100px;
+    margin-top: 3px;
+  }
+  .getProduct select {
+    width: 180px;
+    margin: 0;
+  }
+
+  /*訂購資料*/
+  .nameRemind {
+    display: block;
+  }
+  .formContent .col {
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .formContent .col > input, .tpfield{
+    width: 400px;
+  }
+
+  .deliveryTime > .timeSelect {
+    width: 300px;
+    margin: auto auto auto 35px;
+  }
+
+  /* 確認付款 */
+  .totalCost,
+  .submit {
+    width: 50%;
+  }
+  .submit {
+    margin: auto 0 auto auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+  /* 確認付款 */
+  .totalCost,
+  .submit {
+    width: 30%;
+  }
+}

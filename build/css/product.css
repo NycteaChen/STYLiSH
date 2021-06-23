@@ -1,0 +1,289 @@
+@import url("loading.css");
+
+main {
+  margin-top: 126px;
+  min-height: calc(100vh - 255px);
+}
+
+.product_main-image,
+.product_images {
+  width: 100%;
+}
+.product_data,
+.divide-line,
+.product_introduction {
+  width: 85%;
+}
+
+.product_data {
+  margin: 20px auto 30px;
+}
+
+/* 商品資訊 */
+
+.product_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.product_id {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #dadada;
+  margin: 10px auto 20px;
+}
+
+.product_price {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+/* 樣式選擇欄位 */
+.product_variant,
+.product_variant > .colors,
+.product_variant > .sizes,
+.product_variant > .product_amount {
+  display: flex;
+}
+.product_variant {
+  margin-top: 30px;
+}
+
+.product_variant > .variant_name {
+  height: 18px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-right: 1px solid grey;
+  padding-right: 10px;
+  margin-top: 9px;
+}
+
+
+
+/* 顏色 */
+.product_variant > .colors > .color {
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+  border: 6px solid white;
+  outline: 1px solid #aaa9a9;
+  cursor: pointer;
+}
+
+.product_variant > .colors > .color:hover{
+  outline: 1px solid black;
+}
+
+
+
+.product_variant > .colors > .color_active{
+  outline: 1px solid black;
+}
+
+
+
+
+
+/* 尺寸 */
+.product_variant > .sizes > .size {
+  width: 34px;
+  height: 34px;
+  padding-top: 3px;
+  padding-right: 1px;
+  margin-left: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  background-color: #dadada;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product_variant > .sizes > .size:hover{
+  background-color: black;
+  color:white;
+ }
+
+.product_variant > .sizes > .size_active{
+ background-color: black;
+ color:white;
+}
+
+
+
+/* 數量 */
+.product_variant > #amount {
+  display: none;
+}
+
+.product_variant > .product_amount {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #535252;
+  background-color: white;
+  padding: 7px 15px;
+  justify-content: space-between;
+}
+
+.product_variant > .product_amount > .product_number {
+  font-size: 20px;
+  color: #8b572a;
+}
+
+
+
+.product_variant > .product_amount > .minus,
+.product_variant > .product_amount > .add {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+
+}
+
+
+
+
+
+
+/* 商品完售時按鍵變化 */
+.sold_out{
+  opacity: 0.1;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+
+
+/* 加入購物車 */
+.into_cart {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 30px;
+  border: none;
+  letter-spacing: 5px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  outline:none;
+}
+
+/* 內容分隔線*/
+.divide-line {
+  margin: auto;
+}
+
+.divide-line > p {
+  letter-spacing: 3px;
+  padding-right: 30px;
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  background-color: white;
+  color: #a88250;
+  font-weight: 600;
+}
+
+/* 商品描述 */
+
+.note,
+.description {
+  margin-bottom: 30px;
+}
+
+.texture,
+.description,
+.wash,
+.place {
+  line-height: 1.8;
+}
+
+/* 更多商品資訊 */
+.product_introduction {
+  margin: 30px auto;
+}
+
+.product_story {
+  line-height: 2;
+  font-size: 0.8em;
+}
+.product_images {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 550px) {
+  .product_main-image,
+  .product_images {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product_main-image,
+  .product_data,
+  .divide-line,
+  .product_introduction {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .product_variant > .product_amount,
+  .into_cart {
+    width: 70%;
+    margin-right: auto;
+  }
+  .product_main-image,
+  .product_data,
+  .divide-line,
+  .product_introduction {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+.product_details{
+
+  margin:60px auto;
+  display:flex;
+  max-width:1024px;
+  justify-content: space-between;
+  
+}
+
+.product_main-image{
+  width: 560px;
+}
+
+.product_data{
+  margin:0 auto 0 20px;
+}
+
+.product_images,
+.product_data,
+  .divide-line,
+  .product_introduction {
+    width: 70%;
+  }
+
+  /* 數量 文字出現 */
+  .product_variant > #amount {
+    display: block;
+  }
+
+
+  .product_amount{
+    margin-left: 20px;
+    width: 160px;
+  }
+
+  .into_cart{
+    width:100%;
+  }
+
+
+}

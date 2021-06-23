@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="男裝、女裝、配件任你挑選，盡在STYLiSH" />
+    <link type="text/css" href="css/thankyou.css" rel="stylesheet" />
+    <link type="text/css" href="css/header.css" rel="stylesheet" />
+    <link type="text/css" href="css/footer.css" rel="stylesheet" />
+    <title>STYLiSH 2021</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8NBWDZYQXS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8NBWDZYQXS");
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="./"
+        ><img src="images/logo.png" alt="logo-STYLiSH" id="logo"
+      /></a>
+      <nav class="nav-items">
+        <a href="index.html?tag=women" class="item item-woman">女裝</a>
+        <a href="index.html?tag=men" class="item item-man">男裝</a>
+        <a href="index.html?tag=accessories" class="item item-accessories"
+          >配件</a
+        >
+      </nav>
+      <form method="GET" action="./">
+        <input id="search" name="tag" />
+      </form>
+      <div class="mobile-search" onClick=""></div>
+      <nav class="up-icon">
+        <a href="cart.html">
+          <div id="cart">
+            <div id="cart-total"></div>
+          </div>
+          <div class="mobile-text">購物車</div>
+        </a>
+        <a style="cursor: pointer" id="login">
+          <div id="profile"></div>
+          <div class="mobile-text">會員</div>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1>感謝您的購買，我們會盡快將商品送達！</h1>
+      <h3>請記住以下訂單編號，以便查詢</h3>
+      <div class="orderNumber"></div>
+      <a href="index.html">繼續購物</a>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">關於Stylish</a>
+          </li>
+          <li>
+            <a href="/">服務條款</a>
+          </li>
+          <li>
+            <a href="/">隱私政策</a>
+          </li>
+          <li>
+            <a href="/">聯絡我們</a>
+          </li>
+          <li id="faq">
+            <a href="/">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="links">
+        <a href="/"><img src="images/line.png" alt="line-STYLiSH" /></a>
+        <a href="/"><img src="images/twitter.png" alt="twitter-STYLiSH" /></a>
+        <a href="/"><img src="images/facebook.png" alt="facebook-STYLiSH" /></a>
+      </div>
+      <div class="copy">　　&copy; 2021 AppWorks school</div>
+    </footer>
+    <script type="module" src="js/cartAmount.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.5.1"></script>
+    <script src="js/FB-login.js"></script>
+    <script src="js/thankyou.js"></script>
+  </body>
+</html>

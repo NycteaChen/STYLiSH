@@ -1,0 +1,95 @@
+
+/* footer */
+
+footer {
+    height: 115px;
+    background-color: #282828;
+    display: flex;
+    margin-top:auto;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > nav {
+    width: 754px;
+    flex-shrink: 1;
+  }
+  
+  footer > nav > ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer > nav > ul > li {
+    width: 130px;
+    list-style: none;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    border-right: 1px solid #f5f5f5;
+  }
+  footer > nav > ul > li#faq {
+    border-right: 0;
+  }
+  
+  footer > nav > ul > li > a {
+    color: #f5f5f5;
+  }
+  footer > nav > ul > li > a:hover {
+    color: #c49871;
+  }
+  footer > .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+  }
+  
+  footer > .copy {
+    color: #828282;
+    white-space: nowrap;
+  }
+
+@media only screen and (max-width: 1024px) {
+
+
+/* footer */
+footer {
+    height: 208px;
+    padding: 23px 0 80px;
+    flex-wrap: wrap;
+  }
+  footer > nav {
+    width: 200px;
+  }
+
+  footer > nav > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff;
+    height: 88px;
+  }
+
+  footer > nav > ul > li {
+    width: 100px;
+    border-right: none;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  footer > .links {
+    width: auto;
+  }
+
+  footer > .links > a > img {
+    height: 20px;
+    width: 20px;
+  }
+
+  footer > .links > a {
+    margin-left: 18px;
+  }
+}

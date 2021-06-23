@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Microsoft JhengHei";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  height: 140px;
+  width: 100vw;
+  background-color: white;
+  border-bottom: 40px solid #282828;
+  position: fixed;
+  padding: 26px 54px 26px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+/* header logo */
+header > a > img#logo {
+  width: 258px;
+}
+
+header > a > img#logom,
+header > .nav-items {
+  margin-right: auto;
+}
+
+/* header nav-item */
+
+header > .nav-items {
+  width: 450px;
+  margin-left: 96px;
+  display: flex;
+}
+
+header > .nav-items > .item {
+  height: 28px;
+  padding-right: 11px;
+  letter-spacing: 30px;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #3f3a3a;
+  text-align: center;
+  flex-grow: 1;
+}
+header > .nav-items > .item:hover {
+  color: #704214;
+}
+
+header > .nav-items > .item-man,
+header > .nav-items > .item-accessories {
+  padding-left: 39px;
+  border-left: 2px solid #282828;
+}
+
+/* header input-search */
+
+header > form input#search {
+  width: 214px;
+  height: 40px;
+  border: solid 1px #979797;
+  padding: 8px 48px 8px 20px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 20px;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* header cart & member icon */
+header > .up-icon {
+  width: 130px;
+  margin-left: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > .up-icon > a > div#cart {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/cart.png");
+}
+
+header > .up-icon > a > div#cart:hover {
+  background-image: url("../images/cart-hover.png");
+}
+
+header > .up-icon > a > div#cart > div#cart-total {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1px;
+  color: #f5f5f5d0;
+  font-weight: 700;
+  background-color: #8b5c2dd0;
+  position: relative;
+  top: 22px;
+  left: 22px;
+}
+header > .up-icon > a > div#profile {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/member.png");
+}
+
+header > .up-icon > a > div#profile:hover {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/member-hover.png");
+}
+
+.mobile-text {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 76px;
+    border-bottom: none;
+    display: block;
+    text-align: center;
+    position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header > a > img#logo {
+    width: 129px;
+  }
+
+  header > .nav-items {
+    height: 50px;
+    background-color: #282828;
+    width: 100vw;
+    align-items: center;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    margin-left: 0;
+  }
+
+  header > .nav-items > .item {
+    font-size: 16px;
+    color: #828282;
+    letter-spacing: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header > .nav-items > .item:hover {
+    color: #f5f5f5;
+  }
+
+  header > .nav-items > .item-man,
+  header > .nav-items > .item-accessories {
+    border-left: 2px solid #f5f5f5;
+  }
+
+  header > form input#search {
+    width: 44px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  header > form input#search:hover {
+    background-image: url("../images/search-hover.png");
+    cursor: pointer;
+  }
+  header > form input#search:focus {
+    background-image: url("../images/search.png");
+    border: solid 1px #979797;
+    width: calc(100% - 20px);
+    left: 10px;
+    cursor: text;
+    padding: 8px 48px 8px 20px;
+  }
+
+  header > .up-icon > a > div#cart {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/cart-mobile.png");
+  }
+
+  header > .up-icon > a > div#profile {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/member-mobile.png");
+  }
+
+  header > .up-icon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #282828;
+    margin-left: 0;
+    height: 60px;
+    align-items: center;
+  }
+
+  header > .up-icon > a {
+    width: 50%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .mobile-text {
+    display: block;
+    font-size: 16px;
+    color: #f5f5f5;
+  }
+}

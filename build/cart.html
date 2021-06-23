@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="男裝、女裝、配件任你挑選，盡在STYLiSH">
+    <link type="text/css" href="css/cart.css" rel="stylesheet" />
+    <link type="text/css" href="css/header.css" rel="stylesheet" />
+    <link type="text/css" href="css/footer.css" rel="stylesheet" />
+    <title>STYLiSH 2021</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8NBWDZYQXS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8NBWDZYQXS");
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="./"><img src="images/logo.png" alt="logo-STYLiSH" id="logo" /></a>
+      <nav class="nav-items">
+        <a href="index.html?tag=women" class="item item-woman">女裝</a>
+        <a href="index.html?tag=men" class="item item-man">男裝</a>
+        <a href="index.html?tag=accessories" class="item item-accessories"
+          >配件</a
+        >
+      </nav>
+      <form method="GET" action="./">
+        <input id="search" name="tag" />
+      </form>
+      <div class="mobile-search"></div>
+      <nav class="up-icon">
+        <a href="cart.html">
+          <div id="cart">
+            <div id="cart-total"></div>
+          </div>
+          <div class="mobile-text">購物車</div>
+        </a>
+        <a style="cursor: pointer" id="login">
+          <div id="profile"></div>
+          <div class="mobile-text">會員</div>
+        </a>
+      </nav>
+    </header>
+    <div style="margin-top: 300px;" class="loading"><img src="images/loading.gif" ></div>
+    <main>
+      <div class="root"></div>
+      <div class="personalForm">
+        <div class="getProduct">
+          <div class="delivery">
+            <div>配送國家</div>
+            <select id="place">
+              <option value="delivery">臺灣及離島</option>
+              <option value="delivery">日本</option>
+              <option value="delivery">韓國</option>
+            </select>
+          </div>
+          <div class="payment">
+            <div>付款方式</div>
+            <select id="payMethod">
+              <option value="homeDelivery">宅配貨到付款</option>
+              <option value="credit_card">信用卡</option>
+              <option value="convenience">超商貨到付款</option>
+            </select>
+          </div>
+        </div>
+        <div class="remind">
+          <p>※提醒您：</p>
+          <p>●選擇宅配-請填寫正確收件人資訊，避免包裹配送不達</p>
+          <p>●選擇超商-請填寫正確收件人姓名（與證件相符），避免無法領取</p>
+        </div>
+        <form class="orderData">
+          <div class="title">訂購資料</div>
+          <div class="formContent">
+            <div class="col">
+              <label for="name" class="textTitle">收件人姓名</label>
+              <input type="text" id="name" class="text" required="required" />
+              <div class="nameRemind">
+                務必填寫完整收件人姓名，避免包裹無法順利簽收
+              </div>
+            </div>
+            <div class="col">
+              <label for="email" class="textTitle">電子信箱</label>
+              <input
+                type="email"
+                id="email"
+                class="text"
+                pattern="^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$"
+                placeholder="@gmail.com"
+                required="required"
+              />
+            </div>
+            <div class="col">
+              <label for="phone" class="textTitle">連絡電話</label>
+              <input
+                type="text"
+                class="text"
+                maxlength="10"
+                pattern="09[0-9]{8}"
+                placeholder="09xxxxxxxx"
+                required="required"
+              />
+            </div>
+            <div class="col">
+              <label for="address" class="textTitle">收件地址</label>
+              <input type="text" class="text" required="required" />
+            </div>
+            <div class="deliveryTime col">
+              <label for="time">配送時間</label>
+              <div class="timeSelect">
+                <label for="morning"
+                  ><input
+                    type="radio"
+                    id="morning"
+                    value="morning"
+                    name="time"
+                    checked
+                  />
+                  08:00-12:00</label
+                >
+                <label for="afternoon"
+                  ><input
+                    type="radio"
+                    id="afternoon"
+                    value="afternoon"
+                    name="time"
+                  />
+                  14:00-18:00</label
+                >
+                <label for="random"
+                  ><input
+                    type="radio"
+                    id="anytime"
+                    value="anytime"
+                    name="time"
+                  />
+                  不指定</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="cardPay">
+            <div class="title creditCard">付款資料</div>
+            <div class="formContent">
+              <div class="col">
+                <label for="card" class="cardTextTitle">信用卡號碼</label>
+                <div class="tpfield" id="card-number"></div>
+              </div>
+              <div class="col">
+                <label for="expire" class="cardTextTitle">有效期限</label>
+                <div class="tpfield" id="card-expiration-date"></div>
+              </div>
+              <div class="col">
+                <label for="ccv" class="cardTextTitle">安全碼</label>
+                <div class="tpfield" id="card-ccv"></div>
+              </div>
+            </div>
+          </div>
+          <div class="totalCost">
+            <div class="totalPurchaseCost">
+              <div class="cost">總金額</div>
+              <div id="totalPurchaseCost">
+                NT. <span id="purchaseSum">0</span>
+              </div>
+            </div>
+            <div class="shipping">
+              <div class="cost">運費</div>
+              <div id="shipping">NT. <span id="freight">60</span></div>
+            </div>
+            <div class="shouldPay">
+              <div class="cost">應付金額</div>
+              <div id="shouldPay">NT. <span id="totalSum">0</span></div>
+            </div>
+          </div>
+          <div class="submit">
+            <button id="confirmToPay">確認付款</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">關於Stylish</a>
+          </li>
+          <li>
+            <a href="/">服務條款</a>
+          </li>
+          <li>
+            <a href="/">隱私政策</a>
+          </li>
+          <li>
+            <a href="/">聯絡我們</a>
+          </li>
+          <li id="faq">
+            <a href="/">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="links">
+        <a href="/"><img src="images/line.png" alt="line-STYLiSH"/></a>
+        <a href="/"><img src="images/twitter.png" alt="twitter-STYLiSH"/></a>
+        <a href="/"><img src="images/facebook.png" alt="facebook-STYLiSH"/></a>
+      </div>
+      <div class="copy">　　&copy; 2021 AppWorks school</div>
+    </footer>
+    <script type="module" src="js/cart.js"></script>
+    <script src="js/FB-login.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.5.1"></script>
+    <script src="js/tapPay.js"></script>
+  </body>
+</html>

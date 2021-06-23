@@ -1,0 +1,33 @@
+main {
+  margin: 200px auto 30px;
+  width: 80%;
+  min-height: calc(100vh - 255px);
+  max-width: 1200px;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+h3 {
+  margin: 20px auto 0;
+}
+
+.orderNumber {
+  margin: 20px auto;
+  padding: 5px 10px;
+  background-color: #eeebeb;
+  display: inline-block;
+}
+
+a {
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    font-size: 0.5em;
+  }
+}
