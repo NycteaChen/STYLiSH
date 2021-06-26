@@ -17,7 +17,6 @@ main {
 .nothing {
   margin-top: 100px;
   text-align: center;
-
 }
 
 /* 購物車  */
@@ -26,7 +25,6 @@ main {
   padding-bottom: 15px;
   border-bottom: 1px solid black;
 }
-
 
 /* 購買資訊 */
 .purchaseDetails {
@@ -159,24 +157,26 @@ main {
   border-bottom: 1px solid black;
 }
 
-.cardPay{
+.cardPay {
   display: none;
 }
 
-@keyframes cardShow { 
-  from{opacity:0 } 
-  to{opacity:1 }
+@keyframes cardShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-.cardPay-in{
+.cardPay-in {
   display: block;
   animation: cardShow 1s;
 }
 
-
-.formContent input[type="text"],
-input[type="email"], .tpfield{
+.formContent .text,
+.tpfield {
   width: 100%;
   height: 30px;
   border-radius: 5px;
@@ -184,7 +184,6 @@ input[type="email"], .tpfield{
   padding-left: 12px;
   outline: none;
 }
-
 
 .nameRemind {
   font-size: 14px;
@@ -197,7 +196,7 @@ input[type="email"], .tpfield{
   padding-bottom: 25px;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   cursor: pointer;
 }
 
@@ -205,7 +204,6 @@ input[type="radio"]{
   display: block;
   margin-bottom: 10px;
   font-size: 14px;
-  
 }
 
 /* 總金額 */
@@ -213,7 +211,6 @@ input[type="radio"]{
   width: 80%;
   margin: 25px 0 40px auto;
   white-space: nowrap;
-  
 }
 
 .totalPurchaseCost,
@@ -312,8 +309,8 @@ input[type="radio"]{
   .purchaseDetails {
     width: 100%;
   }
-  .purchaseCard{
-    width:30%;
+  .purchaseCard {
+    width: 30%;
   }
   .purchaseCount > .delete {
     position: relative;
@@ -378,7 +375,8 @@ input[type="radio"]{
     justify-content: space-between;
     margin-top: 30px;
   }
-  .formContent .col > input, .tpfield{
+  .formContent .col > input,
+  .tpfield {
     width: 400px;
   }
 

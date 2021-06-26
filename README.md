@@ -1,65 +1,77 @@
-# Front-End Class Batch #13
+# STYLiSH
 
-## Outline
+<img src="https://nycteachen-stylish.firebaseapp.com/images/logo.png" style="width:250px"/>
 
-### Frontend Fundamental
+STYLiSH is an apparel e-commerce RWD website built with plain JavaScript.
+
+### Link : https://nycteachen-stylish.web.app/
+
+### Login : Facebook
+
+---
+
+## **Technologies**
+
+### **Front-End**
 
 - HTML
 - CSS
 - JavaScript(ES6+)
 
-### User Interface
+### **User Interface**
 
 - Responsive Web Design(RWD)
 - Flex and Grid Layout
 
-### React Libraries
+### **Third-Party Library**
 
-- React(Context, Hooks)
-- React Router
-- Redux
-- Styled Component
-
-### Third-Party Libraries
-
-- Facebook SDK
-- Tappay SDK
-
-### Backend Framework and Cloud Service
-
-- Node and Express
 - Firebase
+- Facebook
+- Tappay
+- Google Analitics
 
-### Networking
+### **Networking**
 
-- HTTP/HTTPS
-- JSON
-- RESTful APIs
-- AJAX(Fetch, Axios)
+- AJAX using Fetch
+- RESTful API integrating
 
-### Persistent Store
+### **Persistent Store**
 
-- Web Storage
-- Cookie
+- Local Storage
 
-### Programming Paradigms
+### **Tools**
 
-- Object-Oriented Programming(OOP)
-- Functional Programming
-
-### Design Patterns
-
-- Module Pattern
-- Model-View-Controller(MVC) Pattern
-
-### Tools for Development
-
-- Webpack
 - ESLint
 - Prettier
-- Git, GitHub
 
-### Tools for Business
+---
 
-- Google Analytics
-- Google PageSpeed Insights
+## **Flow Chart**
+
+<img src="https://imgur.com/0ODpAUG.png" />
+
+---
+
+## **Features**
+
+### Infinite Scroll
+
+<img src="https://imgur.com/QSRKhNU.gif"/>
+
+### Product Picker
+
+<img src="https://imgur.com/bmsE6P1.gif"/>
+
+### Cart Handler
+
+<img src="https://imgur.com/fQTVjeD.gif"/>
+
+### Check out by TapPay services and FB login
+
+<img src="https://imgur.com/B7FLXQg.gif"/>
+
+---
+
+## **Contact**
+
+E-mail : jungturn01tw@gmail.com
