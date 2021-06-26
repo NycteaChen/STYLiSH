@@ -1,6 +1,6 @@
 # STYLiSH
 
-<img src="https://nycteachen-stylish.firebaseapp.com/images/logo.png" style="width:250px"/>
+<img src="https://nycteachen-stylish.firebaseapp.com/images/logo.png" style="max-width:250px"/>
 
 STYLiSH is an apparel e-commerce RWD website built with plain JavaScript.
 
