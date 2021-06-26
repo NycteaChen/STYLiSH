@@ -48,7 +48,7 @@ STYLiSH is an apparel e-commerce RWD website built with plain JavaScript.
 
 ## **Flow Chart**
 
-<img src="https://imgur.com/0ODpAUG.png" />
+![Flow Chart](https://imgur.com/0ODpAUG.png)
 
 ---
 
@@ -56,19 +56,19 @@ STYLiSH is an apparel e-commerce RWD website built with plain JavaScript.
 
 ### Infinite Scroll
 
-<img src="https://imgur.com/QSRKhNU.gif"/>
+![Infinite Scroll](https://imgur.com/6L4p3I3.gif)
 
 ### Product Picker
 
-<img src="https://imgur.com/bmsE6P1.gif"/>
+![Product Picker](https://imgur.com/bmsE6P1.gif)
 
 ### Cart Handler
 
-<img src="https://imgur.com/fQTVjeD.gif"/>
+![Cart Handler](https://imgur.com/fQTVjeD.gif)
 
 ### Check out by TapPay services and FB login
 
-<img src="https://imgur.com/B7FLXQg.gif"/>
+![Check out](https://imgur.com/B7FLXQg.gif)
 
 ---
 
