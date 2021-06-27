@@ -2,9 +2,9 @@
 
 STYLiSH is an apparel e-commerce RWD website built with plain JavaScript.
 
-### Link : https://nycteachen-stylish.web.app/
+Link : https://nycteachen-stylish.web.app/
 
-### Login : Facebook
+Login : Facebook
 
 ---
 
